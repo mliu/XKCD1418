@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Force to Horse",
-  "description": "Based on XKCD comic 1418, this extension Horses your Forces.",
+  "description": "Based on XKCD comic 1418, this extension changes all instances of the word 'Force' to 'Horse'.",
   "version": "1.0",
   
   "permissions": [
