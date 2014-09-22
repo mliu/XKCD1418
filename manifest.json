@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Force to Horse",
+  "description": "Based on XKCD comic 1418, this extension Horses your Forces.",
+  "version": "1.0",
+  
+  "permissions": [
+    "tabs", "http://*/*"
+  ],
+
+  "content_scripts": 
+  [
+    {
+      "matches": ["*://*/*"],
+      "js": ["horse.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
