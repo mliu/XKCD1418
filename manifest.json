@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Force To Horse",
   "description": "Based on XKCD comic 1418, this extension changes all instances of the word 'Force' to 'Horse'.",
-  "version": "1.0",
+  "version": "1.0.1",
   
   "permissions": [
     "tabs", "http://*/*"
