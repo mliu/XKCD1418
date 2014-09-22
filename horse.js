@@ -1,8 +1,18 @@
-var all = document.getElementsByTagName("*");
+//Taken from http://stackoverflow.com/questions/9178174/find-all-text-nodes
 
-for (var i = 0, max = all.length; i < max; i++) {
-	all[i].innerHTML = all[i].innerHTML.split("force").join("horse");
-	all[i].innerHTML = all[i].innerHTML.split("Force").join("Horse");
-	all[i].innerHTML = all[i].innerHTML.split("Forces").join("Horses");
-	all[i].innerHTML = all[i].innerHTML.split("forces").join("horses");
+function recurse(element)
+{
+    if (element.childNodes.length > 0) 
+        for (var i = 0; i < element.childNodes.length; i++) 
+            recurse(element.childNodes[i]);
+
+    if (element.nodeType == Node.TEXT_NODE && /\S/.test(element.nodeValue))
+      {
+        element.nodeValue = element.nodeValue.split("force").join("horse");
+        element.nodeValue = element.nodeValue.split("forces").join("horses");
+        element.nodeValue = element.nodeValue.split("Force").join("Horse");
+        element.nodeValue = element.nodeValue.split("Forces").join("Horses");
+      }
 }
+var html = document.getElementsByTagName('html')[0];
+recurse(html);
