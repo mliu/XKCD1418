@@ -8,10 +8,10 @@ function recurse(element)
 
     if (element.nodeType == Node.TEXT_NODE && /\S/.test(element.nodeValue))
       {
-        element.nodeValue = element.nodeValue.split("force").join("horse");
-        element.nodeValue = element.nodeValue.split("forces").join("horses");
-        element.nodeValue = element.nodeValue.split("Force").join("Horse");
-        element.nodeValue = element.nodeValue.split("Forces").join("Horses");
+        element.nodeValue = element.nodeValue.split("force").join("slut");
+        element.nodeValue = element.nodeValue.split("forces").join("sluts");
+        element.nodeValue = element.nodeValue.split("Force").join("Slut");
+        element.nodeValue = element.nodeValue.split("Forces").join("Sluts");
       }
 }
 var html = document.getElementsByTagName('html')[0];

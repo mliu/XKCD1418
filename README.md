@@ -1,4 +1,4 @@
-# Horse to Force Chrome extension
+# Force to Horse Chrome extension
 
 In Randall Munroe's XKCD comic #1418, he talks about a funny browser text swap:
 
